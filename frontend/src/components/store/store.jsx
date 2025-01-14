@@ -13,7 +13,7 @@ const store = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     axios
-      .get("https://foood-project-backend.onrender.com/api/items/products")
+      .get("https://pizza-selling-website.onrender.com/api/items/products")
       .then((response) => setProducts(response.data))
       .catch((err) => console.error(err));
   }, []);
