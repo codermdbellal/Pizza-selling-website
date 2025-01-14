@@ -1,0 +1,52 @@
+
+.mobile-nav {
+    display: none;
+}
+
+@media (max-width:598px) {
+    .mobile-nav {
+        display: block;
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        background: #064e3b;
+        height: 60px;
+        padding: 0px 20px;
+        box-shadow: 5px 5px 5px #55555533, -5px -5px 5px #55555530; 
+        z-index: 400;
+    }
+
+    .phone .product-count {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .phone .product-count .product-item {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 2px 2px 2px #55555519, -2px -2px 2px #55555519;
+        background-color: green;
+        color: #fff;
+        font-size: 22px;
+    }
+     
+    .phone ul {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .phone ul li a .mobile-icon {
+        color: #fff;
+        font-size: 20px;
+        width: 30px;
+    }
+ 
+}
+

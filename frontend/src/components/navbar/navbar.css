@@ -1,0 +1,154 @@
+.navbar-container {
+  margin: 30px 62px;
+  border-radius: 5px;
+  background-color: #fff;
+  
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  cursor: pointer;
+  gap: 20px;
+  border-radius: 5px;
+  width: 100%;
+  
+}
+
+.nav.scrolled {
+ 
+  background-color: white;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  z-index: 400;
+  transition: .3s;
+}
+
+.nav .input2{
+  display: none;
+}
+
+.nav .car-or-account {
+  display: flex;
+  gap: 20px;
+}
+
+.nav .car-or-account .input {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.nav .logo img {
+  object-fit: cover;
+  width: 150px;
+  margin-top: -20px;
+}
+
+.nav .input p {
+  font-weight: bold;
+}
+
+.nav .input .cart-icon-by-man {
+  font-size: 25px;
+}
+
+.nav .car-or-account .input .count {
+  position: absolute;
+  top: -5px;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  background-color: green;
+}
+
+.nav ul li a {
+  font-weight: 600;
+  font-size: 16px;
+  color: #555;
+  transition: 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color: green;
+}
+
+.nav ul li .active {
+  color: green;
+}
+
+/* Dropdown Container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  min-width: 160px;
+  z-index: 300;
+}
+
+/*=================== navber responsive desing ====================*/
+
+@media(max-width:1250px) {
+ .logo img {
+  display: none;
+ }
+}
+
+@media(max-width:1193px) {
+  .nav .car-or-account .input .count {
+    top: -15px;
+  }
+
+  .logo img {
+    display: none;
+  }
+
+  .nav .car-or-account .responsive-nav{
+    margin-top: -10px;
+  }
+
+  .nav ul{
+    display: none;
+  }
+
+  .nav .input1{
+    display: none;
+  }
+  .nav .input2 {
+    display: block;
+    margin-right: 20px;
+  }
+}
+
+@media(max-width:767px) {
+  
+  .nav {
+    gap: 0px;
+  }
+  
+  .navbar-container {
+    margin: 25px;
+  }
+
+  .car-or-account .input.dropdown {
+    display: none;
+  }
+
+}

@@ -1,0 +1,149 @@
+
+
+.brand-container{
+ height: 350px;
+ position: relative;
+ border-radius: 5px;
+ background:  #e6e4e4;
+ margin: 30px 62px;
+ overflow: hidden;
+}
+
+.item img {
+  height: 350px;
+  border-radius: 5px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.product-off{
+  position: absolute;
+  top: 80px;
+  left: 50px;
+  z-index: 200;
+}
+
+.product-off h1{
+  font-size: 40px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #ffffffdd;
+
+  span {
+    color: #fbc207;
+  }
+}
+
+.product-off button {
+    background-color: #064E3B;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: .3s ease;
+}
+
+.product-off button:hover {
+  background-color: green;
+}
+
+/*==========React-owl-Carousel ===============*/
+
+.brand-container .item {
+  height: 370px;
+}
+
+.nav-menu-responsive {
+  display: none;
+}
+
+/*============= Brand responsive =============*/
+
+@media (max-width:1456px) {
+  .brand-container{
+    height: 250px;
+  }
+
+  .brand-container img {
+    height: 250px;
+  }
+
+  .product-off {
+    top: 25px;
+  }
+}
+
+@media (max-width:1275px) {
+  .nav-menu-responsive {
+    display: block;
+    font-size: 25px;
+    margin-top: 12px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width:1080px) {
+  .product-off {
+    top: 25px;
+  }
+
+  .product-off h1{
+    font-size: 30px;
+  }
+}
+
+@media (max-width:767px) {
+  .brand-container {
+    margin: 30px 25px;
+  }
+
+  .brand-container {
+    height: 200px;
+  }
+
+  .brand-container img {
+    height: 200px;
+  }
+
+  .product-off {
+    left: 20px;
+    top: 15px;
+  }
+
+  .product-off button {
+    font-size: 15px;
+    padding: 8px 30px;
+  }
+}
+
+@media (max-width:430px) {
+  .brand-container {
+    margin: 30px 25px;
+  }
+
+  .brand-container {
+    height: 150px;
+  }
+
+  .brand-container img {
+    height: 150px;
+  }
+
+  .product-off h1{
+    font-size: 18px;
+    color: #ffffff;
+  }
+
+  .product-off {
+    top: 25px;
+    left: 20px;
+  }
+  .product-off button {
+    font-size: 15px;
+    padding: 5px 20px;
+    margin-top: 10px;
+  }
+
+}

@@ -1,0 +1,19 @@
+
+.order-container .order {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 50px 62px;  
+}
+
+@media(max-width:1090px) {
+    .order-container .order{
+       display: block;
+    }
+}
+
+@media(max-width:768px) {
+    .order-container .order {
+        margin: 20px 25px;
+    }
+}

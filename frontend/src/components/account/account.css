@@ -1,0 +1,180 @@
+
+ /*================= wrapper this is main container div in singup item ============ */
+ .wrapper {
+   width: 400px;
+   background: #fff;
+   border-radius: 8px;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+   overflow: hidden;
+   padding: 20px;
+   margin: 0 auto;
+   position: absolute;
+   top: 10px;
+   right: 20px;
+   z-index: 200;
+ }
+ 
+ /*================== title-text this div is the top heading text ====================*/
+ .title-text {
+   text-align: center;
+   margin-bottom: 30px;
+   margin-top: 10px;
+   font-size: 30px;
+   font-weight: bold;
+ }
+ 
+/*================= slide-controls this is actually login and singup button ============== */
+ .slide-controls {
+   display: flex;
+   position: relative;
+   width: 100%;
+   height: 50px;
+   border: 2px solid #5555552e;
+   border-radius: 10px;
+   margin-bottom: 10px;
+   z-index: 200;
+ }
+ 
+ /*================ slide.login, slide.singup this is login and singup button text desing ============== */
+ .slide.login, .slide.signup {
+   width: 50%;
+   text-align: center;
+   cursor: pointer;
+   padding: 10px;
+   z-index: 200;
+   font-size: 16px;
+   font-weight: 600;
+   font-family: sans-serif;
+ }
+ 
+ /*================= slider-tap this is actually hidden div and sliding div =====================*/
+ .slider-tab {
+   position: absolute;
+   height: 100%;
+   width: 50%;
+   background: linear-gradient(50deg, #00376F , #0069D3);
+   transition: 0.3s ease;
+   border-radius: 10px;
+ }
+ 
+ .slider-tab.login {
+   left: 0;
+ }
+ 
+ .slider-tab.signup {
+   left: 50%;
+ }
+ 
+ /* Form inner styling */
+ .form-inner {
+   padding: 20px;
+ }
+ 
+ .field {
+   margin-bottom: 10px;
+ }
+ 
+ .field input[type="text"], .field input[type="password"] {
+   width: 100%;
+   padding: 8px;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+ }
+ 
+ .field.btn {
+   position: relative;
+   overflow: hidden;
+ }
+ 
+ .field.btn input[type="submit"] {
+   width: 100%;
+   background: linear-gradient(50deg, #00376F , #0069D3);
+   color: white;
+   padding: 15px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: background 0.3s ease;
+   font-size: 16px;
+   font-weight: 600;
+ }
+ 
+ .field.btn input[type="submit"]:hover {
+   background: linear-gradient(50deg, #00376F , #0069D3);
+ }
+ 
+ .signup-link {
+   margin-top: 10px;
+   text-align: center;
+ }
+ 
+ .pass-link {
+   margin-left: -15px;
+ }
+ 
+ .slide.login.active,
+.slide.signup.active {
+  color: #fff;
+}
+ 
+
+.login .field{
+  border: 1px solid #55555523;
+  width:112%;
+  margin-left: -20px;
+  outline: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.login .field input {
+   outline: none;
+   border-radius: 10px;
+   padding: 10px;
+}
+
+.login .pass-link {
+   padding-bottom: 20px;
+   color: #1e8bf8;
+}
+
+.login .pass-link a:hover {
+   border-bottom: 1px solid #1580eb;
+}
+
+.login .signup-link {
+   margin-top: 20px;
+}
+
+.login .signup-link a {
+   color : #107ae4;
+}
+
+.login .signup-link a:hover {
+   border-bottom: 1px solid #107ae4;
+}
+
+.signup .field {
+   border: 1px solid #55555523;
+   width:112%;
+   margin-left: -20px;
+   outline: none;
+   border-radius: 10px;
+   margin-bottom: 20px;
+}
+
+.signup .field input {
+   outline: none;
+   border-radius: 10px;
+   padding: 10px;
+}
+
+
+.title-text .title {
+   transition: transform 0.5s;
+}
+
+.title-text .title.login {
+   transform: translateX(2%);
+}
+ 

@@ -1,0 +1,155 @@
+/* src/components/SearchBar.css */
+
+.search-container {
+  position: relative;
+}
+
+.form {
+  display: flex;
+  width: 400px;
+  align-items: center;
+  border: 1px solid hsla(0, 0%, 33%, 0.235);
+  border-radius: 25px;
+}
+
+.search-container input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+  outline: none;
+  border-radius: 25px;
+}
+
+.error-container {
+  position: absolute;
+  z-index: 250;
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+  height: 100px;
+  top: 55px;
+  border: 1px solid #5555551f;
+}
+
+.error-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+
+.results-list {
+  height: 250px;
+  position: absolute;
+  margin-top: 6px;
+  z-index: 300;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.results-list::-webkit-scrollbar {
+  width: 5px;
+  height: 100px;
+}
+
+.results-list::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: rgb(175, 161, 161);
+}
+
+.results-list .results {
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.show-result {
+  border: 1px solid #55555538;
+  border-radius: 5px;
+  padding: 12px 10px;
+  margin-top: 5px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.show-result img {
+  width: 100px;
+  height: 65px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.info-count {
+  width: 90%;
+}
+
+.info-count h6 {
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #000000b6;
+}
+
+.info-count h2 {
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #000000b6;
+  display: flex;
+  color: green;
+  margin-top: -5px;
+  justify-content: space-between;
+
+  .fastar {
+    color: #e39904;
+  }
+}
+
+.form-submit {
+  display: flex;
+  align-items: center;
+  width: 300px;
+}
+
+
+/*============================ Search-Result responsive ===============*/
+
+@media (max-width:1340px) {
+  .form{
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+ 
+  .form {
+    width: 320px
+  }
+}
+
+@media(max-width:461px) {
+
+  .form {
+    width: 190px;
+  }
+
+  .search-container {
+    position: inherit;
+  }
+
+  .error-container {
+    width: 80%;
+    margin-top: 73px;
+  }
+
+  .show-result {
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .results-list {
+    width: 90%;
+    margin-top: 10px;
+  }
+}

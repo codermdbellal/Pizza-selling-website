@@ -1,0 +1,45 @@
+
+.navbarmini-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 55px;
+    gap: 40px;
+}
+
+.navbarmini-container .item-div-there {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffffdd;
+}
+
+.navbarmini-container .item-div-there .icon-mini {
+    color: #ffffffe1;
+    font-size: 18px;
+}
+
+.navbarmini-container .item-div-there p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+/*================ navbarmini responsive desing ===============*/
+@media (max-width: 767px) {
+    .navbarmini-container .item-div-there:nth-child(2) {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbarmini-container .item-div-there:nth-child(1) {
+        display: none;
+    }
+
+    .navbarmini-container .item-div-there:nth-child(3) {
+        display: flex;
+       gap: 30px;
+    }
+}
