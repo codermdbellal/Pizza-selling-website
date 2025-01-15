@@ -15,7 +15,7 @@ const orderprodct = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     axios
-      .get(`https://foood-project-backend.onrender.com/api/items/products/${productId}`)
+      .get(`https://pizza-selling-website.onrender.com/api/items/products/${productId}`)
       .then((response) => setProduct(response.data))
       .catch((error) => console.error(error))
   }, [productId]);

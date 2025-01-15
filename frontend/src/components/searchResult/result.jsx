@@ -18,7 +18,7 @@ const SearchBar = () => {
   const handleSearch = async () => {
     try {
       const response = await axios.get(
-        `https://foood-project-backend.onrender.com/api/items/search?q=${query}`
+        `https://pizza-selling-website.onrender.com/api/items/search?q=${query}`
       );
 
       if (response.data.length === 0) {

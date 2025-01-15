@@ -19,7 +19,7 @@ const orderPymt = () => {
   const [product, setProduct] = useState([]);
 
   useEffect(() => {
-    axios.get(`https://foood-project-backend.onrender.com/api/items/products/${productId}`)
+    axios.get(`https://pizza-selling-website.onrender.com/api/items/products/${productId}`)
       .then((response) => setProduct(response.data))
       .catch((error) => console.error(error));
   }, [productId]);
